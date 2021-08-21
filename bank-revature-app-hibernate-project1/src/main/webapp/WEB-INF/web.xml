@@ -1,0 +1,135 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+<welcome-file-list>
+<welcome-file>Home.html</welcome-file>
+</welcome-file-list>
+  <display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>CustomerController</servlet-name>
+		<display-name>CustomerController</display-name>
+		<description></description>
+		<servlet-class>com.revature.pms.controller.CustomerController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AuthenticateUser</servlet-name>
+		<display-name>AuthenticateUser</display-name>
+		<description></description>
+		<servlet-class>com.revature.pms.controller.AuthenticateUser</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CustomerActionController</servlet-name>
+		<display-name>CustomerActionController</display-name>
+		<description></description>
+		<servlet-class>com.revature.pms.controller.CustomerActionController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmployeeActionController</servlet-name>
+		<display-name>EmployeeActionController</display-name>
+		<description></description>
+		<servlet-class>com.revature.pms.controller.EmployeeActionController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>PrintCustomerController</servlet-name>
+		<display-name>PrintCustomerController</display-name>
+		<description></description>
+		<servlet-class>com.revature.pms.controller.PrintCustomerController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AuthenticateEmployeeController</servlet-name>
+		<display-name>AuthenticateEmployeeController</display-name>
+		<description></description>
+		<servlet-class>com.revature.pms.controller.AuthenticateEmployeeController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmployeeController</servlet-name>
+		<display-name>EmployeeController</display-name>
+		<description></description>
+		<servlet-class>com.revature.pms.controller.EmployeeController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeleteCustomerController</servlet-name>
+		<display-name>DeleteCustomerController</display-name>
+		<description></description>
+		<servlet-class>com.revature.pms.controller.DeleteCustomerController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ProfileController</servlet-name>
+		<display-name>ProfileController</display-name>
+		<description></description>
+		<servlet-class>com.revature.pms.controller.ProfileController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ErrorHandlerController</servlet-name>
+		<display-name>ErrorHandlerController</display-name>
+		<description></description>
+		<servlet-class>com.revature.pms.exceptions.ErrorHandlerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CustomerController</servlet-name>
+		<url-pattern>/CustomerController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AuthenticateUser</servlet-name>
+		<url-pattern>/AuthenticateUser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CustomerActionController</servlet-name>
+		<url-pattern>/CustomerActionController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeActionController</servlet-name>
+		<url-pattern>/EmployeeActionController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PrintCustomerController</servlet-name>
+		<url-pattern>/PrintCustomerController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AuthenticateEmployeeController</servlet-name>
+		<url-pattern>/AuthenticateEmployeeController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeController</servlet-name>
+		<url-pattern>/EmployeeController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteCustomerController</servlet-name>
+		<url-pattern>/DeleteCustomerController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ProfileController</servlet-name>
+		<url-pattern>/ProfileController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ErrorHandlerController</servlet-name>
+		<url-pattern>/ErrorHandlerController</url-pattern>
+	</servlet-mapping>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/ErrorHandlerController</location>
+	</error-page>
+
+<error-page>
+		<error-code>405</error-code>
+		<location>/ErrorHandlerController</location>
+	</error-page>
+	
+	<error-page>
+		<exception-type>javax.servlet.ServletException</exception-type>
+		<location>/ErrorHandlerController</location>
+	</error-page>
+
+<error-page>
+		<exception-type>java.lang.NumberFormatException</exception-type>
+		<location>/ErrorHandlerController</location>
+	</error-page>
+	
+	<error-page>
+		<exception-type>java.lang.NullPointerException</exception-type>
+		<location>/ErrorHandlerController</location>
+	</error-page>
+</web-app>

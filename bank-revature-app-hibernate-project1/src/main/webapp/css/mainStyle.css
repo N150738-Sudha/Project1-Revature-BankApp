@@ -1,0 +1,39 @@
+@charset "ISO-8859-1";
+body{
+	background-color: #302bf2;
+}
+A:link {
+	color: #ff00ff;
+}
+A:visited {
+	color: #4f0000;
+}
+A:hover {
+	color: #000000;
+}
+form{
+	text-align: center;
+	size: 50%;
+}
+button{
+	color : #007138;
+	size: portrait;
+	text-decoration: blink;
+	
+}
+table{
+	border : thick;
+	border-collapse: collapse;
+	border-color: black;
+	
+}
+tr{
+	background-color: #008000;
+}
+img.avatar {
+  width: 10%;
+  border-radius: 50%;
+}
+.faq{
+	color: red;
+}
