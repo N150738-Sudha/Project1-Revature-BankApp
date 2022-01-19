@@ -52,6 +52,7 @@ public class AuthenticateEmployeeController extends HttpServlet {
 				RequestDispatcher dispatcher = request.getRequestDispatcher("employeeUserStories.html");
 				dispatcher.include(request, response);
 				System.out.println("checking for git operations");
+				System.out.println("checking for pull request");
 				
 			}
 			else {
