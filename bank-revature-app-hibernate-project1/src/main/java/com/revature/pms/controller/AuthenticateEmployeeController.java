@@ -11,10 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.revature.pms.model.Customer;
 import com.revature.pms.model.Employee;
-import com.revature.pms.service.CustomerService;
-import com.revature.pms.service.CustomerServiceImpl;
 import com.revature.pms.service.EmployeeService;
 import com.revature.pms.service.EmployeeServiceImpl;
 
@@ -54,6 +51,7 @@ public class AuthenticateEmployeeController extends HttpServlet {
 				
 				RequestDispatcher dispatcher = request.getRequestDispatcher("employeeUserStories.html");
 				dispatcher.include(request, response);
+				System.out.println("checking for git operations");
 				
 			}
 			else {
